@@ -16,6 +16,7 @@
 
 package com.android.deskclock;
 
+
 import android.content.SharedPreferences;
 import android.media.AudioManager;
 import android.media.RingtoneManager;
@@ -117,7 +118,6 @@ public class SettingsActivity extends PreferenceActivity
             listPref.setSummary(getString(R.string.auto_silence_summary, i));
         }
     }
-
 
     private void refresh() {
         final CheckBoxPreference alarmInSilentModePref =
