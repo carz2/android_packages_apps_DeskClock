@@ -80,6 +80,20 @@
     <item msgid="6048861883552402852">"25"</item>
     <item msgid="2740866721232379791">"30"</item>
   </string-array>
+    <string name="flip_action_title">Azione capovolgimento</string>
+    <string name="flip_action_dialog_title">Azione capovolgimento</string>
+    <string name="flip_action_summary">Girare il telofono a schermo in giù farà
+      <xliff:g id="action">%s</xliff:g></string>
+    <string-array name="flip_action_entries">
+      <item>Nulla</item>
+      <item>Sospendere l\'allarme</item>
+      <item>Eliminare l\'allarme</item>
+    </string-array>
+    <string-array name="flip_action_values">
+      <item>0</item>
+      <item>1</item>
+      <item>2</item>
+    </string-array>
     <string name="auto_silence_title" msgid="6940612987809171112">"Silenziatore automatico"</string>
     <string name="auto_silence_summary" msgid="5757272454196171758">"Gli allarmi verranno disattivati dopo <xliff:g id="MINUTES">%d</xliff:g> minuti"</string>
     <string name="auto_silence_never" msgid="4302257878142130807">"Non attivo"</string>
