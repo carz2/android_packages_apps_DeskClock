@@ -127,15 +127,6 @@
     <string name="loading_ringtone" msgid="6523322777415268044">"Ladataan soittoääntä..."</string>
     <string name="control_set_alarm" msgid="2194676418924016327">"Aseta herätys"</string>
     <string name="control_set_alarm_with_existing" msgid="1128169496817859490">"Herätys asetettu: <xliff:g id="TIME">%s</xliff:g>"</string>
-    <string name="flip_action_title">Puhelimen kääntö</string>
-    <string name="flip_action_dialog_title">Puhelimen kääntö</string>
-    <string name="flip_action_summary">Kääntäessäsi puhelimen ympäri
-        <xliff:g id="action">%s</xliff:g></string>
-    <string-array name="flip_action_entries">
-      <item>Älä tee mitään</item>
-      <item>Aseta torkku päälle</item>
-      <item>Hylkää herätys</item>
-    </string-array>
     <string name="alarm_profile">Profiili</string>
     <string name="alarm_profile_no_change_profile">Älä vaihda profiilia</string>
     <string name="alarm_profile_summary_no_change">Älä vaihda profiilia kun herätys alkaa</string>
@@ -231,7 +222,7 @@
     <string name="service_countdown_notification_msg_progress">Ajastin on käytössä.</string>
     <string name="service_countdown_notification_msg_end">Ajastin on päättynyt.</string>
     <string name="service_countdown_notification_summary">Jäljellä oleva aika: <xliff:g id="time">%1$s</xliff:g></string>
-    <string name="cling_deskclock_desc">Liu'ta sivulle siirtyäksesi sekuntikelloon ja ajastimeen.</string>
+    <string name="cling_deskclock_desc">Liu\'ta sivulle siirtyäksesi sekuntikelloon ja ajastimeen.</string>
     <string name="cling_stopwatch_desc">Säädä kierrosten ja sektoreiden toimintaa asetuksista.</string>
     <string name="cling_countdown_desc">Muokataksesi ajastinta, paina kelloa pitkään</string>
     <string name="overflow_button_cd">Lisää asetuksia</string>
