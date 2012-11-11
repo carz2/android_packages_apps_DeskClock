@@ -17,7 +17,6 @@
 package com.android.deskclock;
 
 
-import android.content.SharedPreferences;
 import android.media.AudioManager;
 import android.media.RingtoneManager;
 import android.net.Uri;
@@ -27,7 +26,6 @@ import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceScreen;
-import android.preference.RingtonePreference;
 import android.provider.Settings;
 
 /**
@@ -41,6 +39,8 @@ public class SettingsActivity extends PreferenceActivity
 
     private static final String KEY_ALARM_IN_SILENT_MODE =
             "alarm_in_silent_mode";
+    static final String KEY_SHOW_STATUS_BAR_ICON =
+            "show_status_bar_icon";
     static final String KEY_ALARM_SNOOZE =
             "snooze_duration";
     static final String KEY_VOLUME_BEHAVIOR =
@@ -111,6 +111,10 @@ public class SettingsActivity extends PreferenceActivity
             final ListPreference listPref = (ListPreference) pref;
             String action = (String) newValue;
             updateFlipActionSummary(listPref, action);
+        } else if (KEY_SHOW_STATUS_BAR_ICON.equals(pref.getKey())) {
+            // Check if any alarms are active. If yes and
+            // we allow showing the alarm icon, the icon will be shown.
+            Alarms.updateStatusBarIcon(getApplicationContext(), (Boolean) newValue);
         }
         return true;
     }
@@ -156,5 +160,8 @@ public class SettingsActivity extends PreferenceActivity
         String action = listPref.getValue();
         updateFlipActionSummary(listPref, action);
         listPref.setOnPreferenceChangeListener(this);
+
+        CheckBoxPreference hideStatusbarIcon = (CheckBoxPreference) findPreference(KEY_SHOW_STATUS_BAR_ICON);
+        hideStatusbarIcon.setOnPreferenceChangeListener(this);
     }
 }
