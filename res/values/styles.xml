@@ -162,7 +162,6 @@
 
     <style name="label">
         <item name="android:textSize">@dimen/label_font_size</item>
-        <item name="android:textStyle">bold</item>
         <item name="android:textAllCaps">true</item>
         <item name="android:fontFamily">sans-serif-condensed</item>
     </style>
