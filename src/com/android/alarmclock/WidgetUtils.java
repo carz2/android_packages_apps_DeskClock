@@ -30,7 +30,7 @@ public class WidgetUtils {
     static final String TAG = "WidgetUtils";
 
     public static void setClockSize(Context context, RemoteViews clock, float scale) {
-        float fontSize = context.getResources().getDimension(R.dimen.widget_medium_font_size);
+        float fontSize = context.getResources().getDimension(R.dimen.medium_font_size);
         clock.setTextViewTextSize(
                 R.id.the_clock1, TypedValue.COMPLEX_UNIT_PX, fontSize * scale);
         clock.setTextViewTextSize(
