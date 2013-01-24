@@ -29,8 +29,6 @@ import android.content.SharedPreferences;
 import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
 import android.graphics.drawable.TransitionDrawable;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
 import android.preference.PreferenceManager;
 import android.support.v13.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;

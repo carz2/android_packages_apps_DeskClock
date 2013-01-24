@@ -33,8 +33,8 @@ import android.os.Vibrator;
 import android.preference.PreferenceManager;
 import android.telephony.PhoneStateListener;
 import android.telephony.TelephonyManager;
-import android.util.Log;
 import android.text.format.DateUtils;
+import android.util.Log;
 
 /**
  * Manages alarms and vibe. Runs as a service so that it can continue to play
@@ -70,7 +70,7 @@ public class AlarmKlaxon extends Service {
         public void handleMessage(Message msg) {
             switch (msg.what) {
                 case KILLER:
-                    Log.d(TAG, "*********** Alarm killer triggered ***********");
+                    Log.d(TAG,"*********** Alarm killer triggered ***********");
                     sendKillBroadcast((Alarm) msg.obj, false);
                     stopSelf();
                     break;
