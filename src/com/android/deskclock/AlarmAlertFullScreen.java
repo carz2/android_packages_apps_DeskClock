@@ -490,6 +490,7 @@ public class AlarmAlertFullScreen extends Activity implements GlowPadView.OnTrig
     protected void onPause() {
         super.onPause();
         mPingEnabled = false;
+        detachListeners();
     }
 
     @Override
@@ -498,12 +499,6 @@ public class AlarmAlertFullScreen extends Activity implements GlowPadView.OnTrig
         if (LOG) Log.v("AlarmAlertFullScreen.onDestroy()");
         // No longer care about the alarm being killed.
         unregisterReceiver(mReceiver);
-    }
-
-    @Override
-    public void onPause() {
-        super.onPause();
-        detachListeners();
     }
 
     @Override
